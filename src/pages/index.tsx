@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile';
 import { CompletedChalenge } from "../components/CompletedChalenge";
 import { Countdown } from "../components/Countdown";
 import { ChalengeBox } from "../components/ChalengeBox";
+import { CountdownProvider } from '../contexts/CountdownContext';
 
 export default function Home() {
   return (
@@ -15,20 +16,22 @@ export default function Home() {
       </Head>
       
       <ExperienceBar />
+      
+      <CountdownProvider>
+        <section>
 
-      <section>
+          <div>
+            <Profile />
+            <CompletedChalenge />
+            <Countdown />
+          </div>
+          
+          <div>
+            <ChalengeBox />
+          </div>
 
-        <div>
-          <Profile />
-          <CompletedChalenge />
-          <Countdown />
-        </div>
-        
-        <div>
-          <ChalengeBox />
-        </div>
-
-      </section>
+        </section>
+      </CountdownProvider>
     </div>
   )
 }
