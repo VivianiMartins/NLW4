@@ -58,10 +58,6 @@
     justify-content: center;
 }
 
-.chalengeNotActive img{
-    width: 100%;
-}
-
 .chalengeActive main strong{
    font-weight: 600;
    font-size: 2rem;
@@ -109,11 +105,6 @@
 }
 
 @media (max-width: 640px){
-    .chalengeNotActive img{
-        width: 50% ;
-        margin-top: 10px;
-    }
-
     .chalengeActive footer{
         margin-top: 5px;
     }
