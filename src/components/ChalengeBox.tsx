@@ -53,7 +53,7 @@ export function ChalengeBox() {
 
             ) : (
                 <div className={styles.chalengeNotActive}>
-                <strong>Cpmplete um ciclo para receber desafios</strong>
+                <strong>Complete um ciclo para receber desafios</strong>
                 <p>
                     <img src="icons/level-up.svg" alt="Level Up" />
                     Avance de nível completando desafios.

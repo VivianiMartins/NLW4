@@ -15,3 +15,10 @@
 .CompletedChalengeContainer span:last-child {
     font-size: 1.5rem;
 }
+
+@media (max-width: 640px){
+    .CompletedChalengeContainer {
+        justify-content: space-around;
+        margin: 3rem 0;
+    }
+}

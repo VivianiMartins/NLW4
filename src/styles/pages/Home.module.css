@@ -14,3 +14,18 @@
     gap: 6.25rem;
     align-content: center;
 }
+
+@media (max-width: 640px){
+    .container{
+        height: auto;
+        justify-content: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .container section{
+        display: flex !important;
+        flex-direction: column;
+        grid-gap: 3.25rem;
+        gap: 3.25rem;
+    }
+}

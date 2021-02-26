@@ -8,14 +8,14 @@
     --white: #fff;
     --background: #f2f3f5;
     --gray-line: #DCDDE0;
-    --text: #666666;
+    --text: #4a677a;
     --text-highlight: #B3B9FF;
-    --title: #2E384D;
-    --red: #E83F5B;
-    --green: #4CD62B;
-    --blue: #5965E0;
-    --blue-dark: #4953B8;
-    --blue-twitter: #2AA9E0;
+    --title: #2d4e65;
+    --red: #c5272c;
+    --green:#4cd62b;
+    --medium-green: #319c52;
+    --dark-green: #1b7035;
+    --blue: #2AA9E0;
 }
 
 @media (max-width: 1080px){
@@ -30,8 +30,17 @@
     }
 }
 
+@media (max-width: 640px){
+    html{
+        font-size: 85%;
+    }
+}
+
 body{
-    background: var(--background);
+    background: -moz-linear-gradient(top, #eff4f4 0%, #f7fcff 20%); 
+    background: -webkit-linear-gradient(top, #eff4f4 0%,#f7fcff 20%); 
+    background: linear-gradient(to bottom, #eff4f4 0%,#f7fcff 20%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff4f4', endColorstr='#f7fcff',GradientType=0 );
     color: var(--text);
 }
 

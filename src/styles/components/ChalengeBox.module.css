@@ -9,8 +9,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
 }
 
 .chalengeNotActive{
@@ -45,7 +43,7 @@
 }
 
 .chalengeActive header{
-    color: var(--blue);
+    color: var(--medium-green);
     font-weight: 600;
     font-size: 1.25rem;
     padding: 0 2rem 1.5rem;
@@ -58,6 +56,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.chalengeNotActive img{
+    width: 100%;
 }
 
 .chalengeActive main strong{
@@ -94,10 +96,25 @@
     background: var(--red);
 }
 
+.chalengeActive footer button.challengeFailedButton:hover{
+    background: #ff4747;
+}
+
 .chalengeActive footer button.challengeSuccededButton{
     background: var(--green);
 }
 
-.chalengeActive footer button:hover{
-    filter: brightness(0.9);
+.chalengeActive footer button.challengeSuccededButton:hover{
+    background: var(--dark-green);
+}
+
+@media (max-width: 640px){
+    .chalengeNotActive img{
+        width: 50% ;
+        margin-top: 10px;
+    }
+
+    .chalengeActive footer{
+        margin-top: 5px;
+    }
 }

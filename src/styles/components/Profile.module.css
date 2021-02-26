@@ -27,3 +27,10 @@
 .profileContainer div p img {
     margin-right: 0.5rem;
 }
+
+@media (max-width: 640px){
+    .profileContainer{
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
