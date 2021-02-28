@@ -105,6 +105,9 @@
 }
 
 @media (max-width: 640px){
+    .chalengeActive main{
+        padding-top: 10px;
+    }
     .chalengeActive footer{
         margin-top: 5px;
     }
